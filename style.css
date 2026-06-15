@@ -1,3 +1,17 @@
+/* ************************************************************************** */
+/*                                    FONT                                    */
+/* ************************************************************************** */
+@font-face {
+	font-family: 'robotoregular';
+	src: url('font/robot-regular-webfont.woff2') format('woff2'),
+		url('font/roboto-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* ************************************************************************** */
+/*                                  MAIN FILE                                 */
+/* ************************************************************************** */
 * {
 	--plum: #DBA1E3;
 	--soft-cyan: #90FCF9;
@@ -5,8 +19,10 @@
 }
 
 body {
+	font-family: 'robotoregular', 'Arial', sans-serif;
+
 	display: grid;
-	grid-template-columns: 1fr 3fr;
+	grid-template-columns: 1fr 5fr;
 	grid-template-rows: 1fr 5fr;
 	height: 100vh;
 }
