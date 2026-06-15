@@ -30,12 +30,14 @@ body {
 /* ************************************************************************** */
 /*                                   HEADER                                   */
 /* ************************************************************************** */
-.header button {
-	background-color: var(--plum);
-}
+.header {
+	button {
+		background-color: var(--plum);
+	}
 
-.header .icon {
-	height: 1.5rem;
+	.icon {
+		height: 1.5rem;
+	}
 }
 
 /* ************************************************************************** */
@@ -44,29 +46,37 @@ body {
 .sidebar {
 	grid-row: 1 / 3;
 	background-color: var(--plum);
-}
 
-.sidebar ul {
-	margin: 2rem;
-}
+	div p {
+		font-size: 2rem;
+	}
 
-.sidebar p,
-.sidebar div {
-	margin: 1rem;
-}
+	ul p {
+		font-size: 1.2rem;
+	}
 
-.sidebar li,
-.sidebar div {
-	display: flex;
-	align-items: center;
-}
+	ul {
+		margin: 2rem;
+	}
 
-.sidebar #dashboard {
-	height: 3rem;
-}
+	p,
+	div {
+		margin: 1rem;
+	}
 
-.sidebar .icon {
-	height: 2rem;
+	li,
+	div {
+		display: flex;
+		align-items: center;
+	}
+
+	#dashboard {
+		height: 3rem;
+	}
+
+	.icon {
+		height: 2rem;
+	}
 }
 
 /* ************************************************************************** */
@@ -74,8 +84,8 @@ body {
 /* ************************************************************************** */
 .main-content {
 	background-color: var(--lavender-mist);
-}
 
-.main-content .icon {
-	height: 1.5rem;
+	.icon {
+		height: 1.5rem;
+	}
 }
