@@ -16,6 +16,7 @@
 	--plum: #DBA1E3;
 	--soft-cyan: #90FCF9;
 	--lavender-mist: #F7F0F5;
+	--icy-aqua: #C4F6F7;
 }
 
 body {
@@ -25,19 +26,119 @@ body {
 	grid-template-columns: 1fr 5fr;
 	grid-template-rows: 1fr 5fr;
 	height: 100vh;
+
+}
+
+.profile-picture {
+	width: 50px;
+	border-radius: 50%;
+}
+
+button {
+	background-color: white;
+	width: 2rem;
+	height: 2rem;
+	padding: 0;
+	border: none;
+}
+
+button:hover,
+li:hover {
+	background-color: var(--soft-cyan);
+	cursor: pointer;
+}
+
+button:active,
+li:active {
+	background-color: var(--icy-aqua);
 }
 
 /* ************************************************************************** */
 /*                                   HEADER                                   */
 /* ************************************************************************** */
 .header {
-	button {
-		background-color: var(--plum);
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	padding: 10px 25px;
+	align-items: center;
+
+	/* ********************************* CHILD 1 ******************************** */
+	div:nth-child(1) {
+		display: grid;
+		grid-template-columns: 50px auto;
+		grid-template-rows: 2rem;
+		align-items: center;
+
+		input {
+			background-color: var(--lavender-mist);
+			border-radius: 15px;
+			border: none;
+			line-height: 1.5rem;
+			width: 75%;
+			padding-left: 1rem;
+		}
+	}
+
+	/* ********************************* CHILD 2 ******************************** */
+	div:nth-child(2) {
+		display: grid;
+		grid-template-columns: 1fr 1fr 2fr;
+		grid-template-rows: 50px;
+		align-items: center;
+		justify-items: center;
+		justify-self: end;
+		gap: 10px;
+	}
+
+	/* ********************************* CHILD 3 ******************************** */
+	div:nth-child(3) {
+		display: grid;
+		grid-template-columns: 100px 400px;
+		align-items: center;
+		line-height: 1.5rem;
+
+		span {
+			font-weight: bold;
+			font-size: 1.5rem;
+		}
+
+		.profile-picture {
+			width: 75px;
+		}
+	}
+
+	/* ********************************* CHILD 4 ******************************** */
+	div:nth-child(4) {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 2rem;
+
+		button {
+			padding: 0.75rem 1.5rem;
+			width: auto;
+			height: auto;
+			background-color: var(--plum);
+			border-radius: 50px;
+			font-weight: bold;
+			font-size: 1rem;
+		}
+
+		button:hover {
+			background-color: var(--soft-cyan);
+		}
+
+		button:active {
+			background-color: var(--icy-aqua);
+		}
 	}
 
 	.icon {
 		height: 1.5rem;
+		margin: 0;
+		padding: 0;
 	}
+
 }
 
 /* ************************************************************************** */
@@ -68,6 +169,8 @@ body {
 	div {
 		display: flex;
 		align-items: center;
+		padding: 0 1rem;
+		border-radius: 1rem;
 	}
 
 	#dashboard {
