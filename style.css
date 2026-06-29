@@ -186,8 +186,57 @@ li:active {
 /* ************************************************************************** */
 .main-content {
 	background-color: var(--lavender-mist);
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-template-rows: auto auto;
+	padding: 1rem;
+
+	>div:nth-child(1) {
+		grid-row: 1 / 3;
+	}
+
+	h3 {
+		font-weight: bold;
+		font-size: 1.2rem;
+		margin: 1rem;
+	}
 
 	.icon {
 		height: 1.5rem;
+	}
+
+	/* ***************************** FIRST CONTAINER **************************** */
+	.first-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.card {
+		background-color: white;
+		padding: 1rem;
+		margin: 1rem;
+		border-left: 7px solid var(--icy-aqua);
+		border-radius: 7px;
+		box-shadow: 1px 1px 5px gray;
+	}
+
+	.card h4 {
+		font-weight: bold;
+		font-size: 1.1rem;
+		margin: 0.5rem 0;
+	}
+
+	.card div {
+		justify-self: end;
+		margin: 2rem 1rem 1rem;
+
+		display: grid;
+		grid-auto-flow: column;
+		gap: 1rem;
+	}
+
+	/* ***************************** SIDE CONTAINERS **************************** */
+	.side-container {
+		margin: 1rem 0;
 	}
 }
