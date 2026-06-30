@@ -26,6 +26,7 @@ body {
 	grid-template-columns: 1fr 5fr;
 	grid-template-rows: 1fr 5fr;
 	height: 100vh;
+	line-height: 1.2rem;
 }
 
 .profile-picture {
@@ -228,7 +229,7 @@ li:active {
 		padding: 1rem;
 		margin: 1rem;
 		border-left: 7px solid var(--icy-aqua);
-		border-radius: 7px;
+		border-radius: 10px;
 		box-shadow: 1px 1px 5px gray;
 	}
 
@@ -249,6 +250,31 @@ li:active {
 
 	/* ***************************** SIDE CONTAINERS **************************** */
 	.side-container {
-		margin: 1rem 0;
+		margin: 2rem 1rem;
+		background-color: white;
+		border-radius: 10px;
+		padding: 1.5rem;
+		box-shadow: 1px 1px 5px gray;
+
+		h4 {
+			font-weight: bold;
+			margin: 0.5rem 0;
+		}
+
+		hr {
+			margin: 1.5rem 0;
+		}
+
+		.trending-profile {
+			display: grid;
+			grid-template-columns: 1fr 3fr;
+			align-items: center;
+			margin: 1.5rem 0;
+
+			img {
+				grid-row: span 2;
+				justify-self: left;
+			}
+		}
 	}
 }
