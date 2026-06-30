@@ -90,6 +90,8 @@ li:active {
 		justify-items: center;
 		justify-self: end;
 		gap: 10px;
+		font-weight: bold;
+		font-size: 1.2rem;
 	}
 
 	/* ********************************* CHILD 3 ******************************** */
@@ -153,10 +155,12 @@ li:active {
 
 	div p {
 		font-size: 2rem;
+		font-weight: bold;
 	}
 
 	ul p {
 		font-size: 1.2rem;
+		font-weight: bold;
 	}
 
 	ul {
@@ -207,6 +211,10 @@ li:active {
 
 	.icon {
 		height: 1.5rem;
+	}
+
+	p {
+		color: gray;
 	}
 
 	/* ***************************** FIRST CONTAINER **************************** */
